@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Monitoring Data in Your Node on </title>
-    <link>https://bobertf.github.io/ttnproductdocs/using-tag-trustnet/monitoring-data-in-node/</link>
+    <link>http://docs.fiduciadlt.com/using-tag-trustnet/monitoring-data-in-node/</link>
     <description>Recent content in Monitoring Data in Your Node on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2021 [TAG TrustNet](https://www.tagtrust.net/)</copyright>
-    <lastBuildDate>Tue, 02 Nov 2021 11:02:05 +0600</lastBuildDate><atom:link href="https://bobertf.github.io/ttnproductdocs/using-tag-trustnet/monitoring-data-in-node/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Nov 2021 11:02:05 +0600</lastBuildDate><atom:link href="http://docs.fiduciadlt.com/using-tag-trustnet/monitoring-data-in-node/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
