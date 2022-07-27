@@ -356,14 +356,14 @@ if (!doNotTrack) {
 
 <div class="card mb-4 rounded-0 shadow border-0">
   <div class="card-header rounded-0 bg-white border p-0 border-0">
-    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#503b30770956fb28586fdc6d3912227c2a6e91c3">
-      <span>How does TAG TrustNet compliment the use of Content Verfication (CV) providers?</span> <i class="ti-plus text-primary text-right"></i>
+    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#a47d7f8325807fff31890ea5c2d8f6206d154657">
+      <span>How does TAG TrustNet compliment the use of Ad Verfication tool providers?</span> <i class="ti-plus text-primary text-right"></i>
     </a>
   </div>
-  <div id="503b30770956fb28586fdc6d3912227c2a6e91c3" class="collapse" data-parent="#accordion">
-    <div class="card-body font-secondary text-color pt-0"><p>In general, CV Providers deliver ad effectiveness impression data, blocking and pre-bid tools. They do not cover cost efficiency (supply chain costs), ad delivery/reconciliation, and compliance to industry standards. By incorporating your CV data within TAG TrustNet you are able to:</p>
-<p>Confirm what site and application ads actually appeared on. Matched log-level data from the DSP, SSP, ad server and CV company are used to confirm the domain that was recorded for an impression from each platform. If there are differences this can help identify technical problems, misplacement, and domain spoofing.</p>
-<p>Matching cost data from the DSP and SSP means you can analyse standard verification metrics leading to better business decisions.</p>
+  <div id="a47d7f8325807fff31890ea5c2d8f6206d154657" class="collapse" data-parent="#accordion">
+    <div class="card-body font-secondary text-color pt-0"><p>In general, Ad Verification Providers deliver ad effectiveness impression data, blocking and pre-bid tools. They do not cover cost efficiency (supply chain costs), ad delivery/reconciliation, and compliance to industry standards. By incorporating your Ad Verification data within TAG TrustNet you are able to:</p>
+<p>Confirm what site and application ads actually appeared on. Matched log-level data from the DSP, Exchange/SSP, ad server and Ad Verification company are used to confirm the domain that was recorded for an impression from each platform. If there are differences this can help identify technical problems, misplacement, and domain spoofing.</p>
+<p>Matching cost data from the DSP and Exchange/SSP means you can analyse standard verification metrics leading to better business decisions.</p>
 <p>TAG TrustNet allows you to evaluate how industry standards (ads.txt and sellers.json) and certifications (TAG) get implemented in a single place to improve brand safety, and reduce fraud, malware and piracy.</p>
 <p>TAG TrustNet reconciles supply chain participants data producing a single shared truth that can be used for discrepancy management, managing partner and tag deployments and improving operational efficiency.</p>
 </div>
@@ -378,7 +378,7 @@ if (!doNotTrack) {
     </a>
   </div>
   <div id="34d7e147de0b8a233f209fff0e49bbb4099b6fce" class="collapse" data-parent="#accordion">
-    <div class="card-body font-secondary text-color pt-0">There is no other solution available today that allows to cross-verify impression log files of ads  coming from multiple supply chain data sources. TAG TrustNet allows to compare the ads.txt file from a publisher, the sellers.json file from an exchange, and the impression log file from the SSP to ensure these files exist and consistently describe their relationship and the seller/buyer identifiers with what appears in the log file.</div>
+    <div class="card-body font-secondary text-color pt-0">There is no other solution available today that allows to cross-verify impression log files of ads  coming from multiple supply chain data sources. TAG TrustNet allows to compare the ads.txt file from a publisher, the sellers.json file from an exchange, and the impression log file from the exchange/SSP to ensure these files exist and consistently describe their relationship and the seller/buyer identifiers with what appears in the log file.</div>
   </div>
 </div>
 <h2 id="compliance">Compliance</h2>
@@ -418,7 +418,7 @@ if (!doNotTrack) {
 <ul>
 <li>ads are coming from a publisher that has an ads.txt or app-ads.txt file. </li>
 <li>ads are coming from an exchange that has a sellers.json file.</li>
-<li>based on log level data from the exchange, the exchange is listed as an authorized seller in the publisher’s ads/app-ads.txt file, and the publisher is identified as a known source of inventory in the exchange’s seller.json file.  This is technically done by verifying the seller ID from the SSP log file matches the seller ID (also called the Publisher’s Account ID) in the ads.txt or app-ads.txt file AND the seller ID in the sellers.json file.</li>
+<li>based on log level data from the exchange, the exchange is listed as an authorized seller in the publisher’s ads/app-ads.txt file, and the publisher is identified as a known source of inventory in the exchange’s seller.json file.  This is technically done by verifying the seller ID from the exchange/SSP log file matches the seller ID (also called the Publisher’s Account ID) in the ads.txt or app-ads.txt file AND the seller ID in the sellers.json file.</li>
 </ul>
 </div>
   </div>
@@ -503,11 +503,11 @@ if (!doNotTrack) {
 <li>TAG TrustNet stores the impression data using distributed ledger technology which creates an immutable record of the transaction.</li>
 <li>The data for each impression that is collected from all the companies that were involved in delivering it can be compared to see if there are any inconsistencies.</li>
 </ol>
-<p>It may be helpful to provide a little more information about the last point. One of the key deliverables from TAG TrustNet is that the impression data that is available from each vendor who was involved in delivering an impression is being stitched together to create a single record of each transaction across the supply chain. As a result of this, the data about the same impression from different sources can be compared and inconsistences can be identified. For example, if impression is reported by DSP, but not reported by SSP or ad server - most likely it was not delivered. Here are some other examples of this:</p>
+<p>It may be helpful to provide a little more information about the last point. One of the key deliverables from TAG TrustNet is that the impression data that is available from each vendor who was involved in delivering an impression is being stitched together to create a single record of each transaction across the supply chain. As a result of this, the data about the same impression from different sources can be compared and inconsistences can be identified. For example, if impression is reported by DSP, but not reported by exchange/SSP or ad server - most likely it was not delivered. Here are some other examples of this:</p>
 <ul>
-<li>The impression clearing price from a SSP reports can be compared to that reported by the DSP.</li>
-<li>The publisher domain recognised by a SSP can be compared to the publisher domain recognised by a verification tool (if they do not match it may be a sign of domain spoofing).</li>
-<li>A SSPs-reported platform fee can be cross-checked with payment data from publishers.</li>
+<li>The impression clearing price from a exchange/SSP reports can be compared to that reported by the DSP.</li>
+<li>The publisher domain recognised by a exchange/SSP can be compared to the publisher domain recognised by a verification tool (if they do not match it may be a sign of domain spoofing).</li>
+<li>A exchange/SSP&rsquo;s-reported platform fee can be cross-checked with payment data from publishers.</li>
 </ul>
 <p>It should be noted that TAG TrustNet cannot guarantee that vendors will report data correctly, but it registers every piece of impression level information received from vendors in the distributed ledger&ndash;ensuring that after receipt impression data can’t be changed and remains immutable. If a vendor changes data in their systems after it was reported to TTN it may be detected and proven.</p>
 </div>
@@ -615,7 +615,7 @@ if (!doNotTrack) {
     </a>
   </div>
   <div id="aab03ba9ed57e46ed6dc7014414b5697a806fe3a" class="collapse" data-parent="#accordion">
-    <div class="card-body font-secondary text-color pt-0"><p>For intermediaries (such as ad servers, CVs, DSPs, and Exchanges/SSPs) and publishers here is a summary of the process to join:</p>
+    <div class="card-body font-secondary text-color pt-0"><p>For intermediaries (such as ad servers, Ad Verification tools, DSPs, and Exchanges/SSPs) and publishers here is a summary of the process to join:</p>
 <ol>
 <li>Become a TAG Member and be verified as a legitimate legal entity with a TAG ID</li>
 <li>Agree to the network requirements and sign the TAG TrustNet Membership Agreement</li>
@@ -738,7 +738,7 @@ if (!doNotTrack) {
 </div>
 </div>
           
-          <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 22 Feb 2021</p>
+          <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 27 Jul 2022</p>
           <nav class="pagination mt-3">
             
             

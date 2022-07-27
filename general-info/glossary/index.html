@@ -319,8 +319,8 @@ if (!doNotTrack) {
 <td style="text-align:left">Ad spend or impressions where the publisher has an ads.txt or app-ads.txt file.</td>
 </tr>
 <tr>
-<td>Ads.txt matches SSP log file</td>
-<td style="text-align:left">The sellers ID (and seller type if available) in the SSP log file matches what is in the publishers ads.txt or app-ads.txt file.</td>
+<td>Ads.txt matches exchange log file</td>
+<td style="text-align:left">The sellers ID (and seller type if available) in the exchange/SSP log file matches what is in the publishers ads.txt or app-ads.txt file.</td>
 </tr>
 <tr>
 <td>Allowed</td>
@@ -328,19 +328,19 @@ if (!doNotTrack) {
 </tr>
 <tr>
 <td>Brand safe</td>
-<td style="text-align:left">Ad spend or impressions determined to be brand safe as determined by the CV tool.</td>
+<td style="text-align:left">Ad spend or impressions determined to be brand safe as determined by the Ad Verification tool.</td>
 </tr>
 <tr>
 <td>Brand safe and Non-IVT</td>
-<td style="text-align:left">Ad spend or impressions determined to be both brand safe and non-IVT as determined by the CV tool.</td>
+<td style="text-align:left">Ad spend or impressions determined to be both brand safe and non-IVT as determined by the Ad Verification tool.</td>
 </tr>
 <tr>
 <td>Consistency of ads.txt, sellers.json, and log-level data</td>
-<td style="text-align:left">The seller ID from the SSP log file matches the seller ID (also called the Publisher’s Account ID) in the publishers ads.txt or app-ads.txt file AND the seller ID in the sellers.json file</td>
+<td style="text-align:left">The seller ID from the exchange/SSP log file matches the seller ID (also called the Publisher’s Account ID) in the publishers ads.txt or app-ads.txt file AND the seller ID in the sellers.json file</td>
 </tr>
 <tr>
 <td>Cost difference between DSP and Exchange</td>
-<td style="text-align:left">The DSP media costs minus the SSP recorded winning price.</td>
+<td style="text-align:left">The DSP media costs minus the exchange/SSP recorded winning price.</td>
 </tr>
 <tr>
 <td>Cost Efficiency</td>
@@ -348,19 +348,19 @@ if (!doNotTrack) {
 </tr>
 <tr>
 <td>Delivery Costs</td>
-<td style="text-align:left">The amount of ad spend paid for impressions that includes everything except the payment to the publisher. Delivery costs typically includes platform fees paid to intermediaries (including ad servers, DSPs and SSPs) and data.</td>
+<td style="text-align:left">The amount of ad spend paid for impressions that includes everything except the payment to the publisher. Delivery costs typically includes platform fees paid to intermediaries (including ad servers, DSPs and exchange/SSPs) and data.</td>
 </tr>
 <tr>
 <td>Exchange works with publisher directly</td>
-<td style="text-align:left">Ad spend or impressions where the exchange works with the publisher directly based on its log file records and sellers.json data, along with the publishers ads.txt or app-ads.txt file</td>
+<td style="text-align:left">Ad spend or impressions where the exchange/SSP works with the publisher directly based on its log file records and sellers.json data, along with the publishers ads.txt or app-ads.txt file</td>
 </tr>
 <tr>
 <td>Financial data provided by DSP and Exchange</td>
-<td style="text-align:left">Ad spend or impressions where the DSP and Exchange have disclosed the media cost</td>
+<td style="text-align:left">Ad spend or impressions where the DSP and Exchange/SSP have disclosed the media cost</td>
 </tr>
 <tr>
 <td>Financial data provided by DSP and Exchange with matching impression costs</td>
-<td style="text-align:left">Ad spend or impressions where the DSP and Exchange have disclosed the media cost and clearing price records match</td>
+<td style="text-align:left">Ad spend or impressions where the DSP and Exchange/SSP have disclosed the media cost and clearing price records match</td>
 </tr>
 <tr>
 <td>Live Compliance</td>
@@ -371,28 +371,28 @@ if (!doNotTrack) {
 <td style="text-align:left">Harmonizing, matching, and recording impression delivery log records across a supply chain in near real-time.</td>
 </tr>
 <tr>
-<td>Matched by ad server, CV tool, and DSP</td>
-<td style="text-align:left">Ad spend or impressions that were recorded by all of the following systems: ad server, CV tool, and DSP</td>
+<td>Matched by ad server, Ad Verification tool, and DSP</td>
+<td style="text-align:left">Ad spend or impressions that were recorded by all of the following systems: ad server, Ad Verification tool, and DSP</td>
 </tr>
 <tr>
-<td>Matched by ad server, CV tool, DSP, and Exchange (beta)</td>
-<td style="text-align:left">Ad spend or impressions that were recorded by all of the following systems: ad server, CV tool, DSP, and exchange</td>
+<td>Matched by ad server, Ad Verification tool, DSP, and Exchange (beta)</td>
+<td style="text-align:left">Ad spend or impressions that were recorded by all of the following systems: ad server, Ad Verification tool, DSP, and exchange</td>
 </tr>
 <tr>
-<td>Matched by CV tool</td>
-<td style="text-align:left">Ad spend or impressions that have been recorded by both the CV tool and DSP.</td>
+<td>Matched by Ad Verification tool</td>
+<td style="text-align:left">Ad spend or impressions that have been recorded by both the Ad Verification tool and DSP.</td>
 </tr>
 <tr>
 <td>Matched publisher domain</td>
-<td style="text-align:left">Ad spend or impressions where the ad server, CV tool, DSP (and SSP data if available) all recorded the same domain.</td>
+<td style="text-align:left">Ad spend or impressions where the ad server, Ad Verification tool, DSP (and exchange/SSP data if available) all recorded the same domain.</td>
 </tr>
 <tr>
 <td>Matched timestamps</td>
-<td style="text-align:left">Ad spend or impressions that had timestamps recorded within 1 minute for the ad server, CV tool, and DSP.</td>
+<td style="text-align:left">Ad spend or impressions that had timestamps recorded within 1 minute for the ad server, Ad Verification tool, and DSP.</td>
 </tr>
 <tr>
 <td>Measurable</td>
-<td style="text-align:left">Ad spend or impressions were able to be measured for viewability as determined by the CV tool.</td>
+<td style="text-align:left">Ad spend or impressions were able to be measured for viewability as determined by the Ad Verification tool.</td>
 </tr>
 <tr>
 <td>Media Spend</td>
@@ -412,11 +412,11 @@ if (!doNotTrack) {
 </tr>
 <tr>
 <td>Non-IVT</td>
-<td style="text-align:left">Ad Spend or impression is determined to be delivered to a person as determined by the CV tool.</td>
+<td style="text-align:left">Ad Spend or impression is determined to be delivered to a person as determined by the Ad Verification tool.</td>
 </tr>
 <tr>
 <td>Qualified</td>
-<td style="text-align:left">Qualified impressions are impressions that meet a set of requirements to measure ad effectiveness. TAG TrustNet enables members to define their own requirements and to evaluate data reconciled across the supply chain against them. TAG TrustNet recommends defining qualified impression requirements based on ad quality, supply chain transparency and data consistency metrics. In TAG TrustNet the default definition for a qualified impression is that it must be matched with data from all available buy-side platforms (including DSP, ad server and CV), is measurable, brand safe, non-IVT, and the domains that are reported by the CV tool and DSP are the same.</td>
+<td style="text-align:left">Qualified impressions are impressions that meet a set of requirements to measure ad effectiveness. TAG TrustNet enables members to define their own requirements and to evaluate data reconciled across the supply chain against them. TAG TrustNet recommends defining qualified impression requirements based on ad quality, supply chain transparency and data consistency metrics. In TAG TrustNet the default definition for a qualified impression is that it must be matched with data from all available buy-side platforms (including DSP, ad server and Ad Verification tool), is measurable, brand safe, non-IVT (according to the Ad Verification tool), and the domains that are reported by the Ad Verification tool and DSP are the same.</td>
 </tr>
 <tr>
 <td>Qualified Viewable</td>
@@ -435,7 +435,7 @@ if (!doNotTrack) {
 <td style="text-align:left">Ad spend or impressions where all supply chain participants are TAG Certified Against Fraud.</td>
 </tr>
 <tr>
-<td>Supply Chain Monitor</td>
+<td>Supply Chain Report</td>
 <td style="text-align:left">The TAG TrustNet report for an agency or advertiser that uses a Sankey diagram to show data about the flow of inventory across programmatic participants, from the ad server to the publishers.</td>
 </tr>
 <tr>
@@ -443,8 +443,8 @@ if (!doNotTrack) {
 <td style="text-align:left">Ad spend or impressions where the impressions were reported as unique by the DSP.</td>
 </tr>
 <tr>
-<td>Viewable according to CV Tool</td>
-<td style="text-align:left">Ad spend or impressions are determined to be viewable according to the CV tool being used.</td>
+<td>Viewable according to Ad Verification Tool</td>
+<td style="text-align:left">Ad spend or impressions are determined to be viewable according to the Ad Verification tool being used.</td>
 </tr>
 <tr>
 <td>Viewable according to DSP or Ad Server</td>
@@ -454,7 +454,7 @@ if (!doNotTrack) {
 </table>
 </div>
           
-          <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 08 Feb 2022</p>
+          <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 27 Jul 2022</p>
           <nav class="pagination mt-3">
             
             
