@@ -188,32 +188,10 @@ if (!doNotTrack) {
 
 
 
-<li data-nav-id="https://support.fiduciadlt.com/general-info/charter/" title="TAG TrustNet Charter" class="sidelist
+<li data-nav-id="https://support.fiduciadlt.com/general-info/ads_txt/" title="Ads.txt" class="sidelist
   ">
-  <a href="https://support.fiduciadlt.com/general-info/charter/">
-    TAG TrustNet Charter
-  </a>
-  
-  
-</li>
-
-
-        
-      
-        
-          
-
-
-
-
-
-
-
-
-<li data-nav-id="https://support.fiduciadlt.com/general-info/tagtrustnet-website/" title="TAG TrustNet website" class="sidelist
-  ">
-  <a href="https://support.fiduciadlt.com/general-info/tagtrustnet-website/">
-    TAG TrustNet website
+  <a href="https://support.fiduciadlt.com/general-info/ads_txt/">
+    Ads.txt
   </a>
   
   
@@ -258,6 +236,50 @@ if (!doNotTrack) {
   active">
   <a href="https://support.fiduciadlt.com/general-info/glossary/">
     Glossary
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://support.fiduciadlt.com/general-info/charter/" title="TAG TrustNet Charter" class="sidelist
+  ">
+  <a href="https://support.fiduciadlt.com/general-info/charter/">
+    TAG TrustNet Charter
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://support.fiduciadlt.com/general-info/tagtrustnet-website/" title="TAG TrustNet Website" class="sidelist
+  ">
+  <a href="https://support.fiduciadlt.com/general-info/tagtrustnet-website/">
+    TAG TrustNet Website
   </a>
   
   
@@ -316,7 +338,7 @@ if (!doNotTrack) {
 </tr>
 <tr>
 <td>Ads.txt implemented</td>
-<td style="text-align:left">Ad spend or impressions where the publisher has an ads.txt or app-ads.txt file.  Note: TAG TrustNet crawls the web itself to collect ads.txt data for all domains that appear in customer reports.  New domains should be correctly identified in about one business day.</td>
+<td style="text-align:left">Ad spend or impressions where the publisher has an ads.txt or app-ads.txt file. Note: TAG TrustNet crawls the web itself to collect ads.txt data for all domains that appear in customer reports.  New domains should be correctly identified in about one business day.  <em>For more information about this please see <a href="/general-info/ads_txt" style="color: indigo">ads.txt</a> in the General Information section.</em></td>
 </tr>
 <tr>
 <td>Ads.txt matches exchange log file</td>
@@ -351,6 +373,22 @@ if (!doNotTrack) {
 <td style="text-align:left">The amount of ad spend paid for impressions that includes everything except the payment to the publisher. Delivery costs typically includes platform fees paid to intermediaries (including ad servers, DSPs and exchange/SSPs) and data.</td>
 </tr>
 <tr>
+<td>DSP Data</td>
+<td style="text-align:left">The cost that the DSP charges for using data on its platform.</td>
+</tr>
+<tr>
+<td>DSP Media Cost</td>
+<td style="text-align:left">This is the cost that the DSP paid to purchase the impression from the Exchange, as reported by the DSP.</td>
+</tr>
+<tr>
+<td>DSP Other</td>
+<td style="text-align:left">This includes any fees that the DSP may charge outside of platform, data, or media.</td>
+</tr>
+<tr>
+<td>DSP Platform</td>
+<td style="text-align:left">The fee that the DSP charges for using its platform.</td>
+</tr>
+<tr>
 <td>Exchange works with publisher directly</td>
 <td style="text-align:left">Ad spend or impressions where the exchange/SSP works with the publisher directly based on its log file records and sellers.json data, along with the publishers ads.txt or app-ads.txt file</td>
 </tr>
@@ -361,6 +399,10 @@ if (!doNotTrack) {
 <tr>
 <td>Financial data provided by DSP and Exchange with matching impression costs</td>
 <td style="text-align:left">Ad spend or impressions where the DSP and Exchange/SSP have disclosed the media cost and clearing price records match</td>
+</tr>
+<tr>
+<td>Gross Working Spend</td>
+<td style="text-align:left">The total amount that was paid to the publisher.</td>
 </tr>
 <tr>
 <td>Live Compliance</td>
@@ -375,11 +417,11 @@ if (!doNotTrack) {
 <td style="text-align:left">Ad spend or impressions that were recorded by all of the following systems: ad server, Ad Verification tool, and DSP</td>
 </tr>
 <tr>
-<td>Matched by ad server, Ad Verification tool, DSP, and Exchange (beta)</td>
+<td>Matched by ad server, Ad Verification tool, DSP, and Exchange</td>
 <td style="text-align:left">Ad spend or impressions that were recorded by all of the following systems: ad server, Ad Verification tool, DSP, and exchange</td>
 </tr>
 <tr>
-<td>Matched by Ad Verification tool</td>
+<td>Matched by Ad Verification tool and DSP</td>
 <td style="text-align:left">Ad spend or impressions that have been recorded by both the Ad Verification tool and DSP.</td>
 </tr>
 <tr>
@@ -393,6 +435,10 @@ if (!doNotTrack) {
 <tr>
 <td>Measurable</td>
 <td style="text-align:left">Ad spend or impressions were able to be measured for viewability as determined by the Ad Verification tool.</td>
+</tr>
+<tr>
+<td>Media Cost Delta</td>
+<td style="text-align:left">This is the difference between the DSP media cost and the exchange cost (if there is a difference)</td>
 </tr>
 <tr>
 <td>Media Spend</td>
@@ -443,7 +489,11 @@ if (!doNotTrack) {
 <td style="text-align:left">Ad spend or impressions where the impressions were reported as unique by the DSP.</td>
 </tr>
 <tr>
-<td>Viewable according to Ad Verification Tool</td>
+<td>Unmatched with Ad Verification</td>
+<td style="text-align:left">The amount that was paid to the publisher that was not matched with the Ad Verification log files.</td>
+</tr>
+<tr>
+<td>Viewable according to Ad Verification tool</td>
 <td style="text-align:left">Ad spend or impressions are determined to be viewable according to the Ad Verification tool being used.</td>
 </tr>
 <tr>
@@ -454,7 +504,7 @@ if (!doNotTrack) {
 </table>
 </div>
           
-          <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 02 Aug 2022</p>
+          <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 12 Aug 2022</p>
           <nav class="pagination mt-3">
             
             
@@ -532,6 +582,26 @@ if (!doNotTrack) {
             
             
             
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
 
             
             
@@ -548,15 +618,11 @@ if (!doNotTrack) {
             
             
             
-            
 
             
             
             
 
-            
-            
-            
             
             
             
@@ -688,7 +754,7 @@ if (!doNotTrack) {
             <a class="nav nav-prev" href="https://support.fiduciadlt.com/general-info/faq/" aria-label="Previous page" ><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">FAQ</span></a>
             
             
-            <a class="nav nav-next" href="https://support.fiduciadlt.com/activation/" aria-label="Previous page" > <span class="d-none d-md-block">Activation</span><i class="ti-arrow-right ml-2"></i></a>
+            <a class="nav nav-next" href="https://support.fiduciadlt.com/general-info/charter/" aria-label="Previous page" > <span class="d-none d-md-block">TAG TrustNet Charter</span><i class="ti-arrow-right ml-2"></i></a>
             
           </nav>
         </div>
