@@ -321,35 +321,39 @@ if (!doNotTrack) {
 </thead>
 <tbody>
 <tr>
-<td>Ad Effectiveness</td>
+<td><a id="Ad Effectiveness">Ad Effectiveness</a></td>
 <td style="text-align:left">A measurement of how successfully ads are being purchased that meet the goals of a campaign. The goals may include target audience, brand safety, fraud, and other criteria.</td>
 </tr>
 <tr>
-<td>Ad Spend</td>
+<td><a id="Ad Spend">Ad Spend</a></td>
 <td style="text-align:left">The total amount of money spent to purchase impressions programmatically, which includes both delivery costs and media spend.</td>
 </tr>
 <tr>
-<td>Ad Spend Productivity</td>
+<td><a id="Ad Spend Productivity">Ad Spend Productivity</a></td>
 <td style="text-align:left">A measurement of buying ads using the least amount of ad spend to meet the goals of a campaign. This measure combines both ad effectiveness and cost efficiency</td>
 </tr>
 <tr>
-<td>Ad Spend received by Publisher</td>
+<td><a id="Ad Spend received by Publisher">Ad Spend  received by Publisher</a></td>
 <td style="text-align:left">The percent of the ad spend that is received by the publisher.</td>
 </tr>
 <tr>
-<td>Ads.txt implemented</td>
+<td><a id="Ads.txt implemented">Ads.txt implemented</a></td>
 <td style="text-align:left">Ad spend or impressions where the publisher has an ads.txt or app-ads.txt file. Note: TAG TrustNet crawls the web itself to collect ads.txt data for all domains that appear in customer reports.  New domains should be correctly identified in about one business day.  <em>For more information about this please see <a href="/general-info/ads_txt" style="color: indigo">ads.txt</a> in the General Information section.</em></td>
 </tr>
 <tr>
-<td>Ads.txt matches exchange log file</td>
+<td><a id="</a>Ads.txt matches exchange log file">Ads.txt matches exchange log file</a></td>
 <td style="text-align:left">The sellers ID (and seller type if available) in the exchange log file matches what is in the publishers ads.txt or app-ads.txt file.</td>
 </tr>
 <tr>
-<td>Allowed</td>
+<td><a id="Allowed">Allowed</a></td>
 <td style="text-align:left">Ad spend or impressions meeting the blocking criteria for the DoubleVerify Digital IQ campaign and with no violations (blocks for inappropriate content, IVT, or App/Site/Language. (DoubleVerify only)</td>
 </tr>
 <tr>
-<td>Brand safe</td>
+<td><a id="Blocked">Blocked</a></td>
+<td style="text-align:left">Ad spend or impressions where the requests were not blocked because they met the blocking criteria for the campaign (which is configured in the Ad Verification platform)</td>
+</tr>
+<tr>
+<td><a id="Ad">Ad</a>Brand safe</td>
 <td style="text-align:left">Ad spend or impressions determined to be brand safe as determined by the Ad Verification tool. When calculating the % of impressions that are brand safe, the impressions that are not matched between the DSP and Ad Verification systems are considered non-brand safe.</td>
 </tr>
 <tr>
@@ -389,6 +393,10 @@ if (!doNotTrack) {
 <td style="text-align:left">The fee that the DSP charges for using its platform.</td>
 </tr>
 <tr>
+<td>Exchange fee</td>
+<td style="text-align:left">The total of the fees charged by the exchanges or SSPs.</td>
+</tr>
+<tr>
 <td>Exchange works with publisher directly</td>
 <td style="text-align:left">Ad spend or impressions where the exchange works with the publisher directly based on its log file records and sellers.json data, along with the publishers ads.txt or app-ads.txt file</td>
 </tr>
@@ -405,12 +413,20 @@ if (!doNotTrack) {
 <td style="text-align:left">The total amount that was paid to the publisher.</td>
 </tr>
 <tr>
+<td><a id="IVT">IVT</a></td>
+<td style="text-align:left">Invalid Traffic (IVT) means that the ad spend or impression has NOT been delivered to a person as determined by the Ad Verification tool. When calculating the % of impressions that are IVT, the impressions that are not matched between the DSP and Ad Verification systems are considered IVT.</td>
+</tr>
+<tr>
 <td>Live Compliance</td>
 <td style="text-align:left">Performing compliance checks based on impression log-level data in near real-time of a supply chain to industry regulations, standards, and certifications.</td>
 </tr>
 <tr>
 <td>Live Reconciliation</td>
 <td style="text-align:left">Harmonizing, matching, and recording impression delivery log records across a supply chain in near real-time.</td>
+</tr>
+<tr>
+<td>Log level data</td>
+<td style="text-align:left">Impression-level log files that can be collected from each the different platforms involved in delivering an impression, including the ad server, ad verification, DSP, SSP, and publisher.  These files are the most granular level of data that can be collected for the record of an impression delivery and include a great deal of detail about the impression.  For example, in the DSP log files the following information is typically included for each impression: the time/date that the ad was purchased from the exchange, the site or app that the ad is expected to be delivered on, the price paid to the exchange for the ad, the city/state/country of the person who saw the ad, how much the DSP fee was, a unique impression identifier&ndash;and MUCH more.</td>
 </tr>
 <tr>
 <td>Matched by ad server, Ad Verification tool, and DSP</td>
@@ -445,20 +461,20 @@ if (!doNotTrack) {
 <td style="text-align:left">The amount of ad spend that goes to the publisher.</td>
 </tr>
 <tr>
+<td>MFA</td>
+<td style="text-align:left">Made for Advertising (MFA) sites are those that deliver impressions on user-hostile advertising sites.  Some of the main characteristics of these sites are a highly paid inbound traffic mix, high density and frequency of advertisements, and click bait content, often syndicated across an entire family of MFA sites</td>
+</tr>
+<tr>
 <td>Monitored</td>
 <td style="text-align:left">Ad spend or impressions where the DoubleVerify monitoring services were applied, were not blocked and had no violations from DoubleVerify. (DoubleVerify only)</td>
 </tr>
 <tr>
+<td>MyTrueAdSpend</td>
+<td style="text-align:left">AdSpend that is spent on impressions that met the criteria for being a TrueImpression (see TrueImpressions below).  However in this case the criteria for determining a TrueImpression is customized to meet the needs for a specific advertiser.</td>
+</tr>
+<tr>
 <td>Node Manager</td>
 <td style="text-align:left">The TAG TrustNet product that members log into to configure their node, manage users, manage data and access the Supply Chain monitor or other network functionalities.</td>
-</tr>
-<tr>
-<td>Non-Blocked Requests</td>
-<td style="text-align:left">Ad spend or impressions where the requests were not blocked because they met the blocking criteria for the DoubleVerify Digital IQ campaign. (DoubleVerify only)</td>
-</tr>
-<tr>
-<td><a id="non-IVT">Non-IVT</a></td>
-<td style="text-align:left">Ad Spend or impression is determined to be delivered to a person as determined by the Ad Verification tool. When calculating the % of impressions that are non-IVT, the impressions that are not matched between the DSP and Ad Verification systems are considered IVT.</td>
 </tr>
 <tr>
 <td>OMP</td>
@@ -467,6 +483,10 @@ if (!doNotTrack) {
 <tr>
 <td>PMP</td>
 <td style="text-align:left">Private marketplace (PMP) is inventory that a seller (SSP, ad network or publisher) makes available programmatically on an exchange to select advertisers or buyers. As compared to the Open Marketplace (OMP), with PMPs advertisers have a greater control over what audiences, publishers and placements their spend goes to and where their ads appear at a pre agreed price. In some cases, there is also preferential access to ad inventory.</td>
+</tr>
+<tr>
+<td>Viewable</td>
+<td style="text-align:left">Ad spend or impressions determined to be viewable as determined by the Ad Verification tool. When calculating the % of impressions that are viewable, the impressions that are not matched between the DSP and Ad Verification systems are considered non-viewable.</td>
 </tr>
 <tr>
 <td>Viewable True Ad Spend or Impressions</td>
@@ -481,6 +501,10 @@ if (!doNotTrack) {
 <td style="text-align:left">Ad spend or impressions where the exchange or SSP has a sellers.json file.</td>
 </tr>
 <tr>
+<td>Sellers revenue</td>
+<td style="text-align:left">The portion of the ad spend that is received by the seller, which could be a publisher, exchange, or ad network.</td>
+</tr>
+<tr>
 <td>Supply Chain is TAG BSC</td>
 <td style="text-align:left">Ad spend or impressions where all supply chain participants are TAG Brand Safety Certified.</td>
 </tr>
@@ -493,12 +517,16 @@ if (!doNotTrack) {
 <td style="text-align:left">The TAG TrustNet report for an agency or advertiser that uses a Sankey diagram to show data about the flow of inventory across programmatic participants, from the ad server to the publishers.</td>
 </tr>
 <tr>
-<td>True AdSpend or Impressions</td>
-<td style="text-align:left">True impressions are impressions that meet a set of requirements to measure ad effectiveness. TAG TrustNet enables members to define their own requirements and to evaluate data reconciled across the supply chain against them. TAG TrustNet recommends defining True impression requirements based on ad quality, supply chain transparency and data consistency metrics. In TAG TrustNet the default definition for a TrueImpression is that it must be matched with data from the  DSP and Ad Verification tool, is measurable, brand safe, non-IVT, and the domains that are reported by the Ad Verification tool and DSP are the same (except if the Ad Verification tool is not able to provide all domains and/or app names for an advertiser).</td>
+<td>TrueAdSpend</td>
+<td style="text-align:left">AdSpend that is spent on impressions that met the criteria for being a TrueImpression (see TrueImpressions below).</td>
+</tr>
+<tr>
+<td>TrueImpression</td>
+<td style="text-align:left">Impressions that meet a set of requirements to measure ad effectiveness. TAG TrustNet enables members to define their own requirements and to evaluate data reconciled across the supply chain against them. TAG TrustNet recommends defining True impression requirements based on ad quality, supply chain transparency and data consistency metrics. In TAG TrustNet the default definition for a TrueImpression is that it must be matched with data from the  DSP and Ad Verification tool, is measurable, brand safe, non-IVT, and the domains that are reported by the Ad Verification tool and DSP are the same (except if the Ad Verification tool is not able to provide all domains and/or app names for an advertiser).</td>
 </tr>
 <tr>
 <td>TrueCPM</td>
-<td style="text-align:left">The CPM of impressions that met the criteria for True (see True AdSpend or Impressions above).</td>
+<td style="text-align:left">The CPM of impressions that met the criteria for being a TrueImpression (see TrueImpressions above).</td>
 </tr>
 <tr>
 <td>Unduplicated impressions</td>
@@ -520,7 +548,7 @@ if (!doNotTrack) {
 </table>
 </div>
           
-          <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 09 Oct 2023</p>
+          <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 10 Oct 2023</p>
           <nav class="pagination mt-3">
             
             
