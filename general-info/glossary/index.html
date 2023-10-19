@@ -485,18 +485,6 @@ if (!doNotTrack) {
 <td style="text-align:left">Private marketplace (PMP) is inventory that a seller (SSP, ad network or publisher) makes available programmatically on an exchange to select advertisers or buyers. As compared to the Open Marketplace (OMP), with PMPs advertisers have a greater control over what audiences, publishers and placements their spend goes to and where their ads appear at a pre agreed price. In some cases, there is also preferential access to ad inventory.</td>
 </tr>
 <tr>
-<td><a href="#Viewable" id="Viewable" style="scroll-margin-top:80px">Viewable</a></td>
-<td style="text-align:left">Ad spend or impressions determined to be viewable as determined by the Ad Verification tool. When calculating the % of impressions that are viewable, the impressions that are not matched between the DSP and Ad Verification systems are considered non-viewable.</td>
-</tr>
-<tr>
-<td><a href="#Viewable_True_Ad_Spend_or_Impressions" id="Viewable_True_Ad_Spend_or_Impressions" style="scroll-margin-top:80px">Viewable True Ad Spend or Impressions</a></td>
-<td style="text-align:left">Ad spend or impressions that are both True (see True AdSpend or Impressions above) AND viewable.</td>
-</tr>
-<tr>
-<td><a href="#Viewable_True_CPM" id="Viewable_True_CPM" style="scroll-margin-top:80px">Viewable True CPM</a></td>
-<td style="text-align:left">The CPM of impressions that are both True (see True AdSpend or Impressions above) AND viewable.</td>
-</tr>
-<tr>
 <td><a href="#Sellers_json_implemented" id="Sellers_json_implemented" style="scroll-margin-top:80px">Sellers.json implemented</a></td>
 <td style="text-align:left">Ad spend or impressions where the exchange or SSP has a sellers.json file.</td>
 </tr>
@@ -514,19 +502,19 @@ if (!doNotTrack) {
 </tr>
 <tr>
 <td><a href="#Supply_Chain_Report" id="Supply_Chain_Report" style="scroll-margin-top:80px">Supply Chain Report</a></td>
-<td style="text-align:left">The TAG TrustNet report for an agency or advertiser that uses a Sankey diagram to show data about the flow of inventory across programmatic participants, from the ad server to the publishers.</td>
+<td style="text-align:left">A report for an agency or advertiser that uses a Sankey diagram to show data about the flow of inventory across programmatic participants, from the ad server to the publishers.</td>
 </tr>
 <tr>
 <td><a href="#TrueAdSpend" id="TrueAdSpend" style="scroll-margin-top:80px">TrueAdSpend</a></td>
-<td style="text-align:left">AdSpend that is spent on impressions that met the criteria for being a TrueImpression (see TrueImpressions below).</td>
-</tr>
-<tr>
-<td><a href="#TrueImpression" id="TrueImpression" style="scroll-margin-top:80px">TrueImpression</a></td>
-<td style="text-align:left">Impressions that meet a set of requirements to measure ad effectiveness. TAG TrustNet enables members to define their own requirements and to evaluate data reconciled across the supply chain against them. TAG TrustNet recommends defining True impression requirements based on ad quality, supply chain transparency and data consistency metrics. In TAG TrustNet the default definition for a TrueImpression is that it must be matched with data from the DSP and Ad Verification tool, is measurable, brand safe, non-IVT, and the domains that are reported by the Ad Verification tool and DSP are the same (except if the Ad Verification tool is not able to provide all domains and/or app names for an advertiser).</td>
+<td style="text-align:left">AdSpend that is spent on impressions that met the criteria for being a TrueImpression (see TrueImpression below).</td>
 </tr>
 <tr>
 <td><a href="#TrueCPM" id="TrueCPM" style="scroll-margin-top:80px">TrueCPM</a></td>
-<td style="text-align:left">The CPM of impressions that met the criteria for being a TrueImpression (see TrueImpressions above).</td>
+<td style="text-align:left">The CPM of impressions that met the criteria for being a TrueImpression (see TrueImpression below).</td>
+</tr>
+<tr>
+<td><a href="#TrueImpression" id="TrueImpression" style="scroll-margin-top:80px">TrueImpression</a></td>
+<td style="text-align:left">Impressions that meet a set of requirements to measure ad effectiveness. It is recommended to define TrueImpression requirements based on ad quality, supply chain transparency and data consistency metrics. In TAG TrustNet the default definition for a TrueImpression is that it must be matched with data from the DSP and Ad Verification tool, is measurable, brand safe, non-IVT, and the domains that are reported by the Ad Verification tool and DSP are the same (except if the Ad Verification tool is not able to provide all domains and/or app names for an advertiser).</td>
 </tr>
 <tr>
 <td><a href="#Unduplicated_impressions" id="Unduplicated_impressions" style="scroll-margin-top:80px">Unduplicated impressions</a></td>
@@ -535,6 +523,10 @@ if (!doNotTrack) {
 <tr>
 <td><a href="#Unmatched_with_Ad_Verification" id="Unmatched_with_Ad_Verification" style="scroll-margin-top:80px">Unmatched with Ad Verification</a></td>
 <td style="text-align:left">The amount that was paid to the publisher that was not matched with the Ad Verification log files.</td>
+</tr>
+<tr>
+<td><a href="#Viewable" id="Viewable" style="scroll-margin-top:80px">Viewable</a></td>
+<td style="text-align:left">Ad spend or impressions determined to be viewable as determined by the Ad Verification tool. When calculating the % of impressions that are viewable, the impressions that are not matched between the DSP and Ad Verification systems are considered non-viewable.</td>
 </tr>
 <tr>
 <td><a href="#Viewable_according_to_Ad_Verification_tool" id="Viewable_according_to_Ad_Verification_tool" style="scroll-margin-top:80px">Viewable according to Ad Verification tool</a></td>
@@ -548,11 +540,19 @@ if (!doNotTrack) {
 <td><a href="#Viewable_TrueAdSpend" id="Viewable_TrueAdSpend" style="scroll-margin-top:80px">Viewable TrueAdSpend</a></td>
 <td style="text-align:left">Ad spend that is viewable and meets the criteria to be a TrueImpression (see TrueImpression above)</td>
 </tr>
+<tr>
+<td><a href="#Viewable_TrueCPM" id="Viewable_TrueCPM" style="scroll-margin-top:80px">Viewable TrueCPM</a></td>
+<td style="text-align:left">The CPM of impressions that are both True (see TrueImpression above) AND viewable.</td>
+</tr>
+<tr>
+<td><a href="#Viewable_TrueImpressions" id="Viewable_TrueImpressions" style="scroll-margin-top:80px">Viewable TrueImpressions</a></td>
+<td style="text-align:left">Impressions that are both True (see TrueImpression above) AND viewable.</td>
+</tr>
 </tbody>
 </table>
 </div>
           
-          <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 11 Oct 2023</p>
+          <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 19 Oct 2023</p>
           <nav class="pagination mt-3">
             
             
