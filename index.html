@@ -163,15 +163,15 @@ if (!doNotTrack) {
 					var projects = [
 						
 						{
-							value: "General Information",
-							label: "<p>This section will provide information on some of the basic questions that you may have about TAG TrustNet, such as the charter and where to get more general information.\nThe glossary will provide definitions of terms you will see in the TAG TrustNet web application.\n</p>",
-							url:"https:\/\/support.fiduciadlt.com\/general-info\/"
+							value: "User Accounts",
+							label: "<p>The following section describes how you can get user accounts in TAG TrustNet.\nNew Node When your company first signs up to be a TAG TrustNet member, an account will be set up on your TAG TrustNet node for one person in your company so that he\/she can manage user accounts on that node. This person will be the Node User Administrator for your TAG TrustNet node. Once this is done, all requests to set up user accounts on your node should be directed to your Node User Administrator.\nExisting Node If you have an existing node on TAG TrustNet and someone needs an account to access it, please contact the TAG TrustNet Node User Administrator in your company to set this up. If you don\u0026rsquo;t know who this is you can contact us at support@tagtrust.net.\n</p><p>access</p><p>login</p><p>log-in</p>",
+							url:"https:\/\/support.fiduciadlt.com\/network-services\/user-accounts\/"
 						},
 						
 						{
-							value: "User Accounts",
-							label: "<p>The following section describes how you can get user accounts in TAG TrustNet.\nNew Node When you first sign up to be a TAG TrustNet member, an account will be set up on your TAG TrustNet node for one or more people in your company so they can manage user accounts on that node. Once this is done, all requests to set up user accounts should be directed to the person (or people) who is the Node User Administrator for your TAG TrustNet node.\nExisting Node If you have an existing node on TAG TrustNet and someone needs an account to access it, please contact the TAG TrustNet Node User Administrator in your company to set this up. If you don\u0026rsquo;t know who this is you can contact us at support@tagtrust.net.\n</p><p>access</p><p>login</p><p>log-in</p>",
-							url:"https:\/\/support.fiduciadlt.com\/network-services\/user-accounts\/"
+							value: "General Information",
+							label: "<p>This section will provide information on some of the basic questions that you may have about TAG TrustNet, such as the charter and where to get more general information.\nThe glossary will provide definitions of terms you will see in the TAG TrustNet web application.\n</p>",
+							url:"https:\/\/support.fiduciadlt.com\/general-info\/"
 						},
 						
 						{
@@ -194,7 +194,7 @@ if (!doNotTrack) {
 						
 						{
 							value: "Member Requirements",
-							label: "<p> The TAG TrustNet member requirements can be found on the TAG TrustNet website. This will include requirements for advertisers, agencies, ad servers, CV tools, DSPs, exchanges\/SSPs, and publishers.\n</p><p></p>",
+							label: "<p> The TAG TrustNet member requirements can be found on the Fiducia DLT website. This will include requirements for advertisers, agencies, ad servers, CV tools, DSPs, and SSPs.\n</p><p></p>",
 							url:"https:\/\/support.fiduciadlt.com\/activation\/member\/"
 						},
 						
@@ -206,7 +206,7 @@ if (!doNotTrack) {
 						
 						{
 							value: "Ads.txt",
-							label: "<p>The following section describes what ads.txt is and how you should use this information.\nWhat is ads.txt and app-ads.txt This is a standard introduced in 2017 by the IAB. It requires publishers to list all of the companies who are authorized to sell their inventory in specific format, at a specific location—for both websites (ads.txt) and applications (app-ads.txt). The objective of this standard is to reduce fraud by allowing buyers to identify those companies who are authorized to sell a publisher’s inventory. If a company is not on this list and is trying to sell a publisher’s inventory, then it is likely fraudulent. It is a best practice to only buy from websites and apps that have an ads.txt or app-ads.txt file to reduce the chances that you are buying fraudulent inventory. For more information click here: https:\/\/iabtechlab.com\/ads-txt\/.\nHow is TAG TrustNet checking if websites and applications have these files? TAG TrustNet has built its own web crawler to check if the ads.txt or app-ads.txt files are present on websites and apps.\nWhat does it mean if the TAG TrustNet report says there is no ads.txt or app-ads.txt file? As indicated above, the IAB spec requires that these files must contain this authorized seller data in a specific format at a specific location. If the TAG TrustNet report says there is no ads.txt or app-ads.txt file it can mean one of the following:\n The file does not exist the domain or app that was provided in the DSP log file was invalid, and it is not possible to find the related ads.txt or app-ads.txt file (for example, comcast.tubitv or b00kdsgipk) The format of the file is wrong (according to the IAB specification). There is some other technical problem with it meeting the IAB specification.  I only want my DSP to buy from sites that have ads.txt or app-ads.txt files, but I see from the TAG TrustNet report that this is not happening. Why is this happening and what should I do? Almost every DSP and SSP has built their own web crawler to look for ads.txt and app-ads.txt files, and there will be differences in the rules that are used by different crawlers to determine if the files are valid or not. Some options on how to approach your DSP are:\n Send them the TAG TrustNet report that shows the sites and apps without ads.txt or app-ads.txt files and ask them to review this list. Just be aware that some of these websites and apps may actually have an ads.txt file according to your DSP—because the criteria used for determining a valid file is different from the ones used by TAG TrustNet. Manually check all of the domains (or just the ones that have significant spend) that do not have these files according to the TAG TrustNet report. This can be done by going to the Supply Report, downloading the CSV file, and then sorting it by \u0026ldquo;Ads.txt implemented\u0026rdquo; and then spend. For the ones that you can verify do not have these files, ask your DSP to explain why you are buying from them. Note: when you manually check files like this, you WILL see ads.txt files on website and apps that TAG TrustNet said do not have one, because you will not readily see the technical problems that made the file invalid. To manually look up an ads.txt file, just add \u0026ldquo;\/ads.txt\u0026rdquo; to the end of the top-level domain. For example, to look up the ads.txt file for yahoo.com, just enter yahoo.com\/ads.txt into your browser. It should return the ads.txt file if there is one.  </p><p>ads.txt</p><p>app-ads.txt</p><p></p>",
+							label: "<p>  The following section describes what ads.txt is and how you should use this information.\nWhat is ads.txt and app-ads.txt Ads.txt and app-ads.txt are standards introduced some years ago by the IAB Tech Lab. They require publishers to list all of the companies who are authorized to sell their inventory in a specific format, at a specific location—for both websites (ads.txt) and applications (app-ads.txt). The objective of these standards are to reduce fraud by allowing buyers to identify those companies who are authorized to sell a publisher’s inventory. If a company is not on this list and is trying to sell a publisher’s inventory then it is likely fraudulent. It is a best practice to only buy from websites and apps that have an ads.txt or app-ads.txt file, and only from sellers who are authorized to sell it. For more information click here: https:\/\/iabtechlab.com\/ads-txt\/.\nHow is TAG TrustNet checking if websites and applications have these files? TAG TrustNet has built its own web crawler to check if ads.txt files are present on websites, and is using a webcrawler from the IAB Tech Lab to check if app-ads.txt files are present on apps.\nWhat does it mean if the TAG TrustNet report says there is no ads.txt or app-ads.txt file? As indicated above, the IAB spec requires that these files must contain this authorized seller data in a specific format at a specific location. If the TAG TrustNet report says there is no ads.txt or app-ads.txt file it is likely it means one of the following:\n The file does not exist the domain or app that was provided in the DSP log file was invalid, and it is not possible to find the related ads.txt or app-ads.txt file (for example, comcast.tubitv or j00kdsgdsdk) The file is formatted incorrectly (according to the IAB specification). There is some other technical problem with it meeting the IAB specification.    </p><p>ads.txt</p><p>app-ads.txt</p><p></p>",
 							url:"https:\/\/support.fiduciadlt.com\/general-info\/ads_txt\/"
 						},
 						
@@ -343,7 +343,7 @@ if (!doNotTrack) {
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-8 text-md-left text-center">
-       <p class="mb-md-0 mb-4">Copyright © 2023 <a href="https://www.tagtrust.net/">TAG TrustNet</a></p>
+       <p class="mb-md-0 mb-4">Copyright © 2024 <a href="https://www.tagtrust.net/">TAG TrustNet</a></p>
       </div>
       <div class="col-md-4 text-md-right text-center">
         <ul class="list-inline">
